@@ -304,3 +304,57 @@ body {
     font-weight: 300;
     color: #ffffff;
 }
+
+/* SUBSCRIBE */
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 165px;
+    height: 500px;
+    width: 1500px;
+    background-image: url('../img/subscribe-blueberry.png');
+    background-position: right;
+    font-family: Raleway;
+    color: #262626;
+}
+
+.subscribe__title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subscribe__description {
+    font-size: 17px;
+    line-height: 27px;
+    width: 570px;
+}
+
+.subscribe__info_email {
+    width: 570px;
+    height: 55px;
+    border: 1px solid #262626;
+    outline: none;
+    color: #262626;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.subscribe__info_button {
+    margin: 0 30px;
+    width: 170px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #96b92c;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
