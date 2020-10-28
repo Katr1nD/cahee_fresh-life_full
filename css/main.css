@@ -133,3 +133,84 @@ body {
     font-weight: 300;
     opacity: 0.6;
 }
+
+/* our-services */
+.our-services {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #70bfff;
+    width: 100%;
+    height: 790px;
+}
+
+.our-services__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.our-services__list_button {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: #ffffff;
+    color: #262626;
+    font-weight: 700;
+    border-right: 1px solid #9d9d9d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.our-services__list_button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.our-services__list_button1::after {
+    background-image: url('../img/our-services-shopping.png');
+}
+
+.our-services__list_button2::after {
+    background-image: url('../img/our-services-quality.png');
+}
+
+.our-services__list_button3::after {
+    background-image: url('../img/our-services-delivery.png');
+}
+
+.our-services__list_button4::after {
+    background-image: url('../img/our-services-quality.png');
+}
+
+.our-services__list_button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.our-services__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/our-services-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+}
