@@ -42,7 +42,6 @@ body {
     opacity: 0.5;
 }
 
-
 .logo {
     margin-right: auto;
     height: 52px;
@@ -90,30 +89,9 @@ body {
 }
 
 .page-scroll {
-    position: absolute;
+    position: relative;
     bottom: 68px;
     left: calc(50% - 12px);
-}
-
-.intro__button {
-    box-sizing: border-box;
-    width: 200px;
-    height: 55px;
-    background-color: #ff6033;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    outline: none;
-    border: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Raleway';
-    font-weight: 200;
-    transition: all 300ms ease;
-    cursor: pointer;
-}
-
-.intro__button:active {
-    box-shadow: none;
 }
 
 /* ABOUT-US */
@@ -156,6 +134,19 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
+}
+
+.our-services__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/our-services-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 700;
 }
 
 .our-services__list_button {
@@ -209,19 +200,6 @@ body {
     transition: all 0.5s ease;
 }
 
-.our-services__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../img/our-services-background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-grow: 1;
-    color: #ffffff;
-    font-size: 90px;
-    font-weight: 700;
-}
-
 /* GALLERY */
 
 .gallery {
@@ -268,13 +246,12 @@ body {
     width: 1125px;
 }
 
-.gallery__images_second-line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    height: 400px;
-    width: 1125px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 15px;
+height: 400px;
+width: 1125px;
 }
 
 .gallery__image {
@@ -294,19 +271,6 @@ body {
     grid-row-end: 3;
 }
 
-.gallery__button {
-    width: 200px;
-    height: 55px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: #5585a2;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-weight: 300;
-    color: #ffffff;
-}
-
 /* SUBSCRIBE */
 
 .subscribe {
@@ -318,7 +282,7 @@ body {
     height: 500px;
     background-image: url('../img/subscribe-blueberry.png');
     background-position: right;
-    font-family: Raleway;
+    font-family: 'Raleway';
     color: #262626;
 }
 
@@ -345,19 +309,6 @@ body {
     font-weight: 300;
     box-sizing: border-box;
     padding-left: 15px;
-}
-
-.subscribe__info_button {
-    margin: 0 30px;
-    width: 170px;
-    height: 55px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: #96b92c;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    font-size: 20px;
-    text-transform: uppercase;
 }
 
 /* BLOG */
@@ -449,66 +400,6 @@ body {
     transition: all .5s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     background-color: #fbfbf7;
-}
-
-.blog__button {
-    margin: 70px auto;
-    height: 55px;
-    width: 200px;
-}
-
-.blog__button_flip {
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    font-size: 20px;
-    line-height: 40px;
-    position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.blog__button_flip:hover:after {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-}
-
-.blog__button_flip:hover:before {
-    opacity: 0;
-    transform: translateY(50%) rotateX(90deg);
-}
-
-.blog__button_flip:after {
-    top: 0;
-    left: 0;
-    opacity: 0;
-    display: block;
-    width: 100%;
-    color: #323237;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    position: absolute;
-    background: #adadaf;
-    content: attr(data-back);
-    transform: translateY(-50%) rotateX(90deg);
-}
-
-.blog__button_flip:before {
-    top: 0;
-    left: 0;
-    opacity: 1;
-    display: block;
-    color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    position: relative;
-    background-color: #f72b3b;
-    content: attr(data-front);
-    transform: translateY(0) rotateX(0);
-    cursor: pointer;
 }
 
 /* CONTACT */
@@ -630,4 +521,118 @@ body {
 
 .footer span {
     color: #ff2b58;
+}
+
+/* BUTTONS */
+
+.intro__button:active {
+    box-shadow: none;
+}
+
+
+.gallery__button {
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #5585a2;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.subscribe__info_button {
+    margin: 0 30px;
+    width: 170px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #96b92c;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.intro__button {
+    box-sizing: border-box;
+    width: 200px;
+    height: 55px;
+    background-color: #ff6033;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 200;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.blog__button {
+    margin: 70px auto;
+    height: 55px;
+    width: 200px;
+}
+
+.blog__button_flip {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blog__button_flip:hover:after,
+.intro__button:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.blog__button_flip:hover:before,
+.intro__button:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.blog__button_flip:after,
+.intro__button:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    color: #323237;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.blog__button_flip:before,
+.intro__button:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    position: relative;
+    background-color: #f72b3b;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    cursor: pointer;
 }
